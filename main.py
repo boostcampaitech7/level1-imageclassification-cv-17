@@ -37,9 +37,9 @@ from torchvision import models
 # 환경 설정 및 초기화
 # --------------------------
 
-SERVER_NAME = "RTX4090"
+SERVER_NAME = "V100"
 os.chdir('/workspace' if SERVER_NAME == "RTX4090" else '/data/ephemeral/home/KJW')
-print(f"현재 작업 디렉토리: {os.getcwd()}")
+print(f"작업 디렉토리: {os.getcwd()}")
 
 # WandB API 설정 및 로그인
 os.environ['WANDB_API_KEY'] = 'wandb_api_key'
